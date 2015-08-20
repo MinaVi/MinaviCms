@@ -24,7 +24,7 @@ class Pointaccept extends CI_Controller {
         $this->load->library('parser');
         
         // アップロードクラス
-        $config['upload_path'] = 'C:\xampp\htdocs\minavicms\material';
+        $config['upload_path'] = '/material';
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size'] = '10000';
         $config['max_width'] = '1024';
