@@ -1,4 +1,5 @@
 {include file="common/header.tpl"}
+{assign var="base" value="/minavicms/"}
 
 <div class="container-fluid">
     <div class="row-fluid">
@@ -11,13 +12,13 @@
             </div><!--well -->
         </div><!--/span-->
 
-        <form action="http://localhost/minavi/Dataaccept/index" method="post" class="form-horizontal" role="form">
+        <form action="{$base}Dataaccept/index" method="post" class="form-horizontal" role="form">
 
             <div class="span9">
                 <?php echo validation_errors('title'); ?>
                 {*
                 <div class="naviko">
-                <img class="img-circle" src="/minavi/common/images/naviko/01.png">
+                <img class="img-circle" src="{$base}common/images/naviko/01.png">
                 </div><!--nabiko-->
                 *}
                 <h3 class="page-title">
@@ -604,7 +605,7 @@
                 <div class="span3">
                 <dl class="blue active">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/01.png">
+                <img class="img-circle" src="{$base}common/images/naviko/01.png">
                 <ul>
                 <li class="heading"><h2>笑顔</h2></li>
                 <li class="take-look">選択</li>
@@ -616,7 +617,7 @@
                 <div class="span3">
                 <dl class="green">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/02.png">
+                <img class="img-circle" src="{$base}common/images/naviko/02.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -628,7 +629,7 @@
                 <div class="span3">
                 <dl class="purple">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/03.png">
+                <img class="img-circle" src="{$base}common/images/naviko/03.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -640,7 +641,7 @@
                 <div class="span3">
                 <dl class="yellow">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/04.png">
+                <img class="img-circle" src="{$base}common/images/naviko/04.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -652,7 +653,7 @@
                 <div class="span3" style="margin-left:0;">
                 <dl class="green">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/05.png">
+                <img class="img-circle" src="{$base}common/images/naviko/05.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -664,7 +665,7 @@
                 <div class="span3">
                 <dl class="purple">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/06.png">
+                <img class="img-circle" src="{$base}common/images/naviko/06.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -676,7 +677,7 @@
                 <div class="span3">
                 <dl class="purple">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/07.png">
+                <img class="img-circle" src="{$base}common/images/naviko/07.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>
@@ -689,7 +690,7 @@
                 <div class="span3">
                 <dl class="purple">
                 <dt class="item-img">
-                <img class="img-circle" src="/minavi/common/images/naviko/08.png">
+                <img class="img-circle" src="{$base}common/images/naviko/08.png">
                 <ul>
                 <li class="heading"><h2>ほげ</h2></li>
                 <li class="take-look">選択</li>

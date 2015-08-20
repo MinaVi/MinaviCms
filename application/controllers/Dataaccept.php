@@ -38,7 +38,6 @@ class Dataaccept extends CI_Controller {
         
         // form値取得
         $formValues = $this->input->post();
-        echo print_r($formValues, true);
         
         $this->parser->parse("dataaccept.tpl");
     }
