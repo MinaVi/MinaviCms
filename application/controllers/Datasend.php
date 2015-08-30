@@ -12,6 +12,20 @@ class Datasend extends CI_Controller {
     }
 
     public function index() {
+
+        $this->load->model('Items', '', TRUE);
+        $items = $this->Items->getItems();
+        $postItems = array();
+
+        foreach ($items as $key => $item) {
+            if (!empty($item)) {
+                $item['title'] = $item['title'];
+            }
+            $postItems[] = $item;
+        }
+
+        $this->smarty->assign('all_items', $postItems);
+
         $this->parser->parse("datasend.tpl");
     }
 
