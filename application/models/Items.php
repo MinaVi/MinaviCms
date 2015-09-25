@@ -24,6 +24,23 @@ class Items extends CI_Model {
         }
     }
 
+    public function getItemsOverTargetDatetime($datetime = "0000-00-00 00:00:00") {
+
+        $params = array($datetime);
+
+        $sql = 'SELECT * FROM local_items WHERE m_datetime > ? AND  is_enabled = 1 AND is_removed = 0';
+        
+        $query = $this->db->query($sql, $params);
+        if ($this->db->query($sql, $params)) {
+            // 成功処理
+            $result = $query->result('array');
+            return $result;
+        } else {
+            // 失敗処理
+            return false;
+        }
+    }
+
     /**
      * 
      * ARアイテムを登録する
@@ -35,11 +52,12 @@ class Items extends CI_Model {
      * @param type $bgImageFile
      * @return boolean
      */
-    public function setItem($areaId, $title, $lon, $lat, $bgImageFile) {
+    public function setItem($areaId, $title, $titleEn, $lon, $lat, $bgImageFile) {
         $params = array(
             'talk_group_id' => 0,
             'area_id' => $areaId,
             'title' => $title,
+            'title_en' => $titleEn,
             'lon' => $lon,
             'lat' => $lat,
             'ar_image_name' => $bgImageFile,
@@ -58,4 +76,3 @@ class Items extends CI_Model {
     }
 
 }
-

@@ -14,7 +14,7 @@ class Datasend extends CI_Controller {
     public function index() {
 
         $this->load->model('Items', '', TRUE);
-        $items = $this->Items->getItems();
+        $items = $this->Items->getItemsOverTargetDatetime();
         $postItems = array();
 
         foreach ($items as $key => $item) {
@@ -25,6 +25,9 @@ class Datasend extends CI_Controller {
         }
 
         $this->smarty->assign('all_items', $postItems);
+
+        $mime = "text/xml";
+        header("Content-type: $mime");
 
         $this->parser->parse("datasend.tpl");
     }
