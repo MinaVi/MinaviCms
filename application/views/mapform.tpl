@@ -14,12 +14,21 @@
 
         <form action="{$base}Pointaccept/index" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 
-            <div class="span9">
+            <div id="cesiumContainer" class="span9">
                 <?php echo validation_errors('title'); ?>
             </div><!--/span-->
-
+            <script>
+                var viewer = new Cesium.Viewer('cesiumContainer', {
+                    imageryProvider: new Cesium.createOpenStreetMapImageryProvider({
+                        url: 'http://cyberjapandata.gsi.go.jp/xyz/std/'
+                    }),
+                    terrainProvider: new Cesium.JapanGSITerrainProvider({}),
+                    baseLayerPicker: false
+                });
+                var scene = viewer.scene;
+                scene.globe.depthTestAgainstTerrain = true;
+            </script>
         </form>
-
     </div><!--/row-->
     <hr>
 </div><!--/.fluid-container-->
