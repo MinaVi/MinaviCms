@@ -51,7 +51,12 @@
 
         <script type="text/javascript" src="{$base}common/js/jquery/zebra-datepicker/zebra_datepicker.js"></script>
         <link href="{$base}common/css/jquery/zebra-datepicker/zebra_datepicker.css" rel="stylesheet">
-    </head
+
+        <!-- cesium settings -->
+        <script src="https://cesiumjs.org/Cesium/Build/Cesium/Cesium.js"></script>
+        <link href="https://cesiumjs.org/Cesium/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+        <script src="{$base}common/js/JapanGSITerrainProvider.js"></script>
+    </head>
     <body>
 
 
