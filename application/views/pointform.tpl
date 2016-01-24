@@ -42,7 +42,9 @@
                             <th>英語タイトル</th>
                         </tr>
                         <tr>
-                            <td><input type="text" name="title_en"></td>
+                            <td><input type="text" name="title_en"><br/>
+                                <label><input type="checkbox" name="in_english">自動翻訳を利用する<br/></label>
+                            </td>
                         </tr>
                         <tr>
                             <th>場所</th>

@@ -67,12 +67,12 @@
                     </a>
                     <a class="brand" href="#">Project name</a>
                     <div class="nav-collapse collapse">
-                        <ul class="nav navbar-text pull-right">
+{*                        <ul class="nav navbar-text pull-right">
                             <li><a href="#" class="register"><i class="icon-off"></i>ログアウト</a></li>
-                        </ul>
-                        <p class="navbar-text pull-right">
+                        </ul>*}
+{*                        <p class="navbar-text pull-right">
                             <i class="icon-asterisk"></i>Logged in as <a href="#" class="navbar-link">塩崎</a>
-                        </p>
+                        </p>*}
                         <ul class="nav">
                             <li><a href="01.html"><i class="icon-comment"></i>表情＆セリフ</a></li>
                             <li class="dropdown">
